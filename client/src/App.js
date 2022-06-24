@@ -1,4 +1,4 @@
-import { Navbar } from './components';
+import { Navbar, RafflesPage } from './components';
 
 import './App.css';
 
@@ -8,8 +8,9 @@ function App() {
       <div className='App-header'>
         <Navbar /> 
       </div>
+      
     <div className='body'>
-    
+      <RafflesPage />
     </div>
     </div>
   );

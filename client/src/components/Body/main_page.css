@@ -1,0 +1,43 @@
+.containerRflPage{
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.WelcomeContainer{
+    padding: 5%;
+    margin: 5%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    background-color: #8b8b8b;
+}
+
+.lblContainer{
+    text-align: left;
+}
+
+.lblContainer  h1{
+    font-weight: 600;    
+}
+.lblContainer  h2{
+    font-weight: 700;    
+}
+
+.lblContainer  p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.lblContainer  p span{
+    color: rgb(21, 31, 126);   
+    font-weight: 800;
+}
+
+.lblContainer  a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: solid 1px;
+}
