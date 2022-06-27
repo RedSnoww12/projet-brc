@@ -20,18 +20,7 @@ const RafflesPage = () => {
                     <img src={SneakerImg} alt="" />
                 </div>
             </div>
-            <div className="ArticleContainer">
-                <div className="ArticleFilter">
-                    <ul>
-                        <button>Tout</button>
-                        <button>En ce moment</button>
-                        <button>A venir</button>
-                    </ul>
-                </div>
-                <div className="ArticleView">
-
-                </div>
-            </div>
+          
         </div>
     );
 }
