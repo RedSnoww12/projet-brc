@@ -1,6 +1,13 @@
-const express = require('express');
-const cors = require("cors");
+import express from "express";
+import dotenv from "dotenv";
+import connectDatabase from './config/MongoDb.js';
+import shoesRoute from './routes/Shoes.routes.js';
+import { errorHandler, notFound } from './Middleware/Error.js';
+
+//const cors = require("cors");
 //var mysql = require('mysql');
+dotenv.config();
+connectDatabase();
 const app = express();
 
 // parse requests of content-type - application/json
@@ -9,10 +16,11 @@ app.use(express.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
-// simple route
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Sacha application." });
-});
+app.use("/api/shoes", shoesRoute)
+
+// ERROR HANDLER
+app.use(notFound);
+app.use(errorHandler);
 
 
 // set port, listen for requests
