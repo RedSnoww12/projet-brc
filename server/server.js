@@ -1,7 +1,8 @@
-import products from './data/Products.js';
 import express from "express";
 import dotenv from "dotenv";
 import connectDatabase from './config/MongoDb.js';
+import shoesRoute from './routes/Shoes.routes.js';
+import { errorHandler, notFound } from './Middleware/Error.js';
 
 //const cors = require("cors");
 //var mysql = require('mysql');
@@ -15,21 +16,11 @@ app.use(express.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
-// simple route
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Sacha application." });
-});
+app.use("/api/shoes", shoesRoute)
 
-// load products
-app.get("/api/products", (req, res) => {
-  res.json(products);
-});
-// load single product
-app.get("/api/products/:id", (req, res) => {
-  const product = products.find((p) => p.id === req.params.id);
-  console.log(product)
-  res.json(product);
-});
+// ERROR HANDLER
+app.use(notFound);
+app.use(errorHandler);
 
 
 // set port, listen for requests
