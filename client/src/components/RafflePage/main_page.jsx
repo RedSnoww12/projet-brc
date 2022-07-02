@@ -1,5 +1,6 @@
 import './main_page.css';
 import SneakerImg from '../../assets/aj4.png';
+import { Link } from 'react-router-dom';
 
 const RafflesPage = () => {
     return(
@@ -14,7 +15,7 @@ const RafflesPage = () => {
                         <span> vous obtenez la paire et non  le droit de l'acheter.</span> <br /> <br />
                         Inscrit toi et rejoins l'anti raffles! </p>
 
-                    <a href=""> S'inscrire 📝</a>
+                    <Link to='/login'><a>S'inscrire 📝</a></Link>
                 </div>
                 <div className="PhotolblContainer">
                     <img src={SneakerImg} alt="" />

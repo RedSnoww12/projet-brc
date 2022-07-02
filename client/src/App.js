@@ -1,25 +1,19 @@
-import { Navbar, RafflesPage, Footer, Shop } from './components';
+import React from 'react';
+import { Routes, Route, Link } from "react-router-dom";
+import { HomePage }  from './screens';
 
 import './App.css';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-
-      <div className='App-header'>
-        <Navbar /> 
-      </div>
+    <Routes>
+      <Route path='/' element={<HomePage />} />
       
-    <div className='body'>
-      <RafflesPage />
-      <Shop />
-    </div>
-    
-    <div className='footer'>
-      <Footer />
-    </div>
-
-    </div>
+      <Route path='*' element={<main style={{ padding: "1rem" }}>
+          <p>There's nothing here!</p>
+        </main>} />
+    </Routes>
   );
 }
 

@@ -1,13 +1,15 @@
 import logo from '../../assets/logo_fd-b.jpg';
 import logoAvatar from '../../assets/user.png';
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import './navbar.css';
+import Footer from '../Footer/footer';
 
 
 const Navbar = () => {
     return(
-        <div class="nav">
-            <a class="navbar_logo" href="#">
+        <div className="nav">
+            <a className="navbar_logo" href="#">
                 <img
                     src={logo}
                     alt="brc Logo"
@@ -15,22 +17,22 @@ const Navbar = () => {
                     loading="lazy"
                 />
                 </a>  
-                <nav class='nav_contener'>
-                <ul class="nav__links">
-                    <li class="nav-item"><a class="nav-link" href="#">Les Raffles</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Comment Participer ? </a></li>
+                <nav className='nav_contener'>
+                <ul className="nav__links">
+                    <Link to=''> <li className="nav-item"><a className="nav-link" href="#">Les Raffles</a></li></Link>
+                    <li className="nav-item"><a className="nav-link" href="#">Comment Participer ? </a></li>
                 </ul>
                 </nav>
             
-            <div class="right_items">
-                <li class="nav-item">
-                <img
+            <div className="right_items">
+                <li className="nav-item">
+                <Link to='/login'><img
                     src={logoAvatar}
-                    class="rounded-circle"
+                    className="rounded-circle"
                     height="50"
                     list-style = "none"
                     alt="Customer Profile Picture"
-                    loading="lazy"/>
+                    loading="lazy"/></Link>
                 </li>
         </div>
         </div>       
