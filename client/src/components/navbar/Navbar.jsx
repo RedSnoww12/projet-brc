@@ -9,14 +9,14 @@ import Footer from '../Footer/footer';
 const Navbar = () => {
     return(
         <div className="nav">
-            <a className="navbar_logo" href="#">
+            <Link to='/'><a className="navbar_logo">
                 <img
                     src={logo}
                     alt="brc Logo"
                     height="150"
                     loading="lazy"
                 />
-                </a>  
+                </a></Link>
                 <nav className='nav_contener'>
                 <ul className="nav__links">
                     <Link to=''> <li className="nav-item"><a className="nav-link" href="#">Les Raffles</a></li></Link>

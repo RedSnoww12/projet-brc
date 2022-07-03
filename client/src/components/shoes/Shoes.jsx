@@ -1,7 +1,7 @@
 import React from "react";
 import './shoes.css'
 
-const Shoes = ({shoes}, ArtcImg) => {
+const Shoes = ({shoes}, ArtcImg = '') => {
     return(
     <div className="ArticleCard"> 
         <div className="card-header">
