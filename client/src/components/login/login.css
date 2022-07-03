@@ -63,11 +63,7 @@ body{
     font-size: .84375rem;
     font-weight: 400;
     line-height: 1.8;
-    color: rgb(255, 255, 255);
-    background-color: transparent;
-    background-clip: padding-box;
-    border: 1px solid rgb(255, 247, 247);
-    border-radius: 0.25rem;
+    border-radius: 0.1rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .container-button{
@@ -80,10 +76,6 @@ margin-top: 10px;
     font-size: .84375rem;
     font-weight: 400;
     line-height: 1.8;
-    color: rgb(255, 255, 255);
-    background-color: transparent;
-    background-clip: padding-box;
-    border: 1px solid rgb(255, 247, 247);
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 

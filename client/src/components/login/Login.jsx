@@ -6,7 +6,7 @@ import './login.css';
 const Login  = () => {
     return(
     <>
-                                <div className='container_video'>
+                            <div className='container_video'>
                                 <video id='videop' src={video} loop muted autoPlay  ></video>
                             </div>
                            
@@ -39,7 +39,7 @@ const Login  = () => {
                                     <div className='flexbox'>
                                         <div className='inputvalide'>
                                             <input type="checkbox" name="Ce souvenir de moi" id="check" />
-                                            <label htmlFor=""> Ce souvenir de moi</label>
+                                            <label htmlFor=""> Se souvenir de moi</label>
                                         </div>
 
                         <div className='forget'>
