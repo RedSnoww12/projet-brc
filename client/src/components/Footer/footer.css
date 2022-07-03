@@ -4,6 +4,8 @@
     padding:40px 0;
     background-color:#212121;
     color:#afafaf;
+    min-height: 100%;
+    position: sticky;
   }
   
   .footer-basic ul {

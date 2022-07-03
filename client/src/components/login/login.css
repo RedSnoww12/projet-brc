@@ -1,0 +1,124 @@
+.formulaire{
+    grid: 2;
+    margin-left: 700px;
+    background-color: rgb(63, 63, 63);
+    opacity: 0.8;
+    align-items: center;
+    z-index: 1;
+    width: 600px;
+    height: 400px;
+    border-radius: 3%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 90px;
+    
+
+}
+.users{
+    color: aliceblue;
+    
+}
+#title{
+    color: white;
+}
+.container_video{
+    
+    position:absolute;
+    
+    
+    
+
+}
+.tout{
+    margin: auto;
+align-items: center;
+padding-top: 150px;
+}
+#videop{
+   
+    max-width: 100%;
+    height: auto;
+    
+}
+body{
+    position: relative;
+   
+}
+.labelmdp{
+    margin-top: 10px;
+    color: white;
+    margin-right: 380px;
+}
+.labelus{
+    margin-top: 10px;
+    color: white;
+    margin-right: 400px;
+
+}
+#inputmdp{
+    
+    width: 80%;
+    height: calc(1.8em + 1rem + 2px);
+    padding: 0.5rem 1rem;
+    font-size: .84375rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid rgb(255, 247, 247);
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.container-button{
+margin-top: 10px;
+}
+#inputusers{
+    width: 80%;
+    height: calc(1.8em + 1rem + 2px);
+    padding: 0.5rem 1rem;
+    font-size: .84375rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid rgb(255, 247, 247);
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+.inputvalide{
+    color: white;
+}
+.flexbox{
+    justify-content: space-evenly;
+    display: flex;
+    
+}
+#button{
+    position: relative;
+    width: 250px;
+    height: 70px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, .1);
+    border: none;
+    border-radius: 10px;
+   
+}
+#button:active {
+    transform: scale(.95);
+  }
+  @media screen and (max-width: 900px) {
+
+    #videop{
+        width: auto;
+        height: auto;
+        
+    }
+    
+  }

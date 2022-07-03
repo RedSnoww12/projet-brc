@@ -1,4 +1,4 @@
-import { Navbar, RafflesPage, Footer, Shop } from './components';
+import { Navbar, RafflesPage, Footer, Shop, Login } from './components';
 
 import './App.css';
 
@@ -11,8 +11,7 @@ function App() {
       </div>
       
     <div className='body'>
-      <RafflesPage />
-      <Shop />
+    <Login /> 
     </div>
     
     <div className='footer'>
