@@ -1,7 +1,7 @@
 import React from "react";
-import './shoes.css'
+import './ArticleCard.css'
 
-const Shoes = ({shoes}, ArtcImg = '') => {
+const ArticleCard = ({shoes}, ArtcImg = '') => {
     return(
     <div className="ArticleCard"> 
         <div className="card-header">
@@ -33,4 +33,4 @@ const Shoes = ({shoes}, ArtcImg = '') => {
     );
 }
 
-export default Shoes;
+export default ArticleCard;
