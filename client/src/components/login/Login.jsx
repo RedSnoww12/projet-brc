@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import video from '../../assets/video.mp4';
-import './login.css';
+import './login.css'; 
+
 
 
 const Login  = () => {
     return(
     <>
-                            <div className='container_video'>
-                                <video id='videop' src={video} loop muted autoPlay  ></video>
-                            </div>
+         <div className='container_video'>
+            <video id='videop' src={video} loop muted autoPlay  ></video>
+        </div>
                            
     <div className='tout'>
      
@@ -33,6 +34,7 @@ const Login  = () => {
 
                     <label htmlFor="mdp">Mot De Passe</label>
                 </div>
+                
                     
                             <input id='inputmdp' type="password" name="password"  placeholder='Mot De Passe' />
 
@@ -42,29 +44,25 @@ const Login  = () => {
                                             <label htmlFor=""> Se souvenir de moi</label>
                                         </div>
 
-                        <div className='forget'>
-                                    <a href="#">Mot de passe oubliée ?</a>
-                                </div>
-                                </div>
+                                        <div className='forget'>
+                                             <a href="#">Mot de passe oubliée ?</a>
+                                        </div>
+                                    </div>
                                 
 
                                 
                          
-                            <div className='container-button'>
+                                <div className='container-button'>
 
-                                <input id='button' type="button" value="Connexion" />
-                                
+                                    <input id='button' type="submit" value="Connexion" />
 
-                            </div>
+                                </div>
+                               <div className='inscrit'>
+                                <input type="button" value="S'inscrire" />
 
-
-                           
-                    
+                               </div>
             </div>
-                                
-            
-               
-            
+   
         </div>
         
     </div>

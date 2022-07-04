@@ -11,9 +11,8 @@
     text-align: center;
     margin: auto;
     margin-bottom: 90px;
-    
-
 }
+
 .users{
     color: aliceblue;
     
@@ -64,7 +63,7 @@ body{
     font-weight: 400;
     line-height: 1.8;
     border-radius: 0.1rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    
 }
 .container-button{
 margin-top: 10px;
@@ -105,12 +104,156 @@ margin-top: 10px;
 #button:active {
     transform: scale(.95);
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1500px ) {
 
     #videop{
         width: auto;
         height: auto;
         
     }
+    .formulaire{
+        grid: 2;
+        margin-left: 700px;
+        background-color: rgb(63, 63, 63);
+        opacity: 0.8;
+        align-items: center;
+        z-index: 1;
+        width: 600px;
+        height: 300px;
+        border-radius: 3%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 125px;
+    }
+    #inputmdp{
+    
+        width: 50%;
+        height: calc(1.8em + 1rem + 2px);
+        padding: 0.5rem 1rem;
+        font-size: .84375rem;
+        font-weight: 400;
+        line-height: 1.8;
+        border-radius: 0.1rem;
+       
     
   }
+  #inputusers{
+    width: 50%;
+    height: calc(1.8em + 1rem + 2px);
+    padding: 0.5rem 1rem;
+    font-size: .84375rem;
+    font-weight: 400;
+    line-height: 1.8;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+  #button{
+    
+    position: relative;
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, .1);
+    border: none;
+    border-radius: 10px;
+   
+}
+}
+@media screen and (max-width: 1300px ) {
+    #videop{
+        
+        width: 100%;
+        height: auto;
+        
+        
+    }
+    #title{
+        color: white;
+        font-size: 30px;
+    }
+    .formulaire{
+        background-color: rgb(63, 63, 63);
+        opacity: 0.8;
+        align-items: center;
+        z-index: 1;
+       width: 310px;
+        height: 310px;
+        border-radius: 3%;
+        text-align: center;
+        margin: auto;
+        visibility: hidden;
+        
+    }
+    #inputmdp{
+    
+        width: 50%;
+        height: calc(1.8em + 1rem + 2px);
+        padding: 0.5rem 1rem;
+        font-size: .84375rem;
+        font-weight: 400;
+        line-height: 1.8;
+        border-radius: 0.1rem;
+       
+    
+  }
+  #inputusers{
+    width: 50%;
+    height: calc(1.8em + 1rem + 2px);
+    padding: 0.5rem 1rem;
+    font-size: .84375rem;
+    font-weight: 400;
+    line-height: 1.8;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+  #button{
+    
+    position: relative;
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, .1);
+    border: none;
+    border-radius: 10px;
+   
+}
+.labelmdp{
+    margin-top: 10px;
+    color: white;
+    margin-right: 380px;
+}
+.labelus{
+    
+    margin-top: 10px;
+    color: white;
+    margin-right: 400px;
+
+}
+.tout{
+    margin: auto;
+align-items: center;
+
+}
+.container_video{
+    
+    position:absolute;
+    width: 100%;
+    
+    
+    
+    
+
+}
+
+
+}
