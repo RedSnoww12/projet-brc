@@ -1,5 +1,6 @@
 import { Navbar, RafflesPage, Footer } from '../components';
-import { ShopSection } from '../containers';
+import ShopSection from './../containers/ShopSection/ShopSection';
+
 
 const HomePage = () => {
     return (

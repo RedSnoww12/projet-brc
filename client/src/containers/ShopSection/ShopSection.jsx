@@ -13,7 +13,7 @@ const ShopSection = () => {
     const dispatch = useDispatch();
     const shoesList = useSelector((state) => state.shoesList);
 
-    const {loading, error, shoes} = shoesList;
+    const {loading, error, events} = shoesList;
 
     useEffect(() => {
         dispatch(listShoes())
@@ -37,10 +37,10 @@ const ShopSection = () => {
                 <>
                     <div className="ArticleView-GridContainer">
                      
-                        {shoes.map((shoe) => (   
+                        {events.map((shoe) => (   
                                 
                             <Link to={`/shoes/${shoe._id}`}>
-                                <Shoes shoes={shoe} ArtcImg={ArtcImg} key={shoe._id} />
+                                <Shoes event={shoe} ArtcImg={ArtcImg} key={shoe._id} />
                             </Link>
                         ))} 
                         

@@ -6,7 +6,7 @@ export const listShoes = () => async(dispatch) =>{
     try {
         dispatch({type:SHOES_LIST_REQUEST});
 
-        const {data} = await axios.get("/shoes");
+        const {data} = await axios.get("/events");
         dispatch({type: SHOES_LIST_SUCCESS, payload: data});
 
     } catch (error) {
