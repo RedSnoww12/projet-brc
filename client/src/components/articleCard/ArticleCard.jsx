@@ -23,7 +23,7 @@ const ArticleCard = ({event}, ArtcImg = '') => {
         </div>
         <div className="photo-product">
                 <div>
-                    <img src={ArtcImg} alt={event.shoes.shoes_name}/>
+                    <img src={event.shoes.shoes_image} alt={event.shoes.shoes_name}/>
                 </div>
         </div>
         <div className="desc-product">
