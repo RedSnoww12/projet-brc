@@ -25,7 +25,7 @@ export const detailsShoes = (id) => async(dispatch) =>{
     try {
         dispatch({type:SHOES_DETAILS_REQUEST});
 
-        const {data} = await axios.get(`/shoes/${id}`);
+        const {data} = await axios.get(`/event/${id}`);
         dispatch({type: SHOES_DETAILS_SUCCESS, payload: data});
 
     } catch (error) {

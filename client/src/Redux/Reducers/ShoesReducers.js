@@ -19,14 +19,14 @@ export const shoesListReducer = (state = {events:[]}, action) => {
     }
 }
 
-// SINGLE SHOES
-export const shoesDetailsReducer = (state = {shoe:{}}, action) => {
+// SINGLE Event
+export const EventDetailsReducer = (state = {event:{}}, action) => {
     switch (action.type) {
         case SHOES_DETAILS_REQUEST:
             return {...state, loading: true};
 
         case SHOES_DETAILS_SUCCESS:
-            return {loading: false, shoe: action.payload};
+            return {loading: false, event: action.payload};
 
         case SHOES_DETAILS_FAIL:
             return {loading: false, error: action.payload};

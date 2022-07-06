@@ -11,7 +11,7 @@ const App = () => {
   return (
     <Routes>
       <Route path='/' element={<HomePage />} />
-      <Route path='/shoes/:shoesId' element={<SingleShoes />}/>
+      <Route path='/event/:eventId' element={<SingleShoes />}/>
       
       <Route path='*' element={<main style={{ padding: "1rem" }}>
           <p>There's nothing here!</p>

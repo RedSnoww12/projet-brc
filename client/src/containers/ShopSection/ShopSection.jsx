@@ -37,10 +37,10 @@ const ShopSection = () => {
                 <>
                     <div className="ArticleView-GridContainer">
                      
-                        {events.map((shoe) => (   
+                        {events.map((event) => (   
                                 
-                            <Link to={`/shoes/${shoe._id}`}>
-                                <Shoes event={shoe} ArtcImg={ArtcImg} key={shoe._id} />
+                            <Link to={`/event/${event._id}`}>
+                                <Shoes event={event} ArtcImg={ArtcImg} key={event._id} />
                             </Link>
                         ))} 
                         

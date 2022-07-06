@@ -9,18 +9,18 @@ import { useParams } from "react-router";
 const SingleShoes = () => {
 
     //const shoesId = match.params.id;
-    const {shoesId} = useParams();
+    const {eventId} = useParams();
 
     const dispatch = useDispatch();
 
 
     const shoesDetails = useSelector((state) => state.shoesDetails);
-    const {loading, error, shoe} = shoesDetails;
+    const {loading, error, event} = shoesDetails;
 
 
     useEffect(() =>{
-        dispatch(detailsShoes(shoesId));
-    }, [dispatch, shoesId])
+        dispatch(detailsShoes(eventId));
+    }, [dispatch, eventId])
 
     
     return (
@@ -37,7 +37,7 @@ const SingleShoes = () => {
                 (
                     <>
                         <div className='body'>
-                            <Event shoes={shoe[0]}/>
+                            <Event shoes={event[0]}/>
                         </div>
                         
                     </>
