@@ -20,7 +20,7 @@ export const shoesListReducer = (state = {events:[]}, action) => {
 }
 
 // SINGLE Event
-export const EventDetailsReducer = (state = {event:{}}, action) => {
+export const eventDetailsReducer = (state = {event:{shoes:{}}}, action) => {
     switch (action.type) {
         case SHOES_DETAILS_REQUEST:
             return {...state, loading: true};

@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import { Navbar, Footer, Event, Loading, Error } from "../components";
 import { useDispatch, useSelector } from 'react-redux';
-import { detailsShoes } from "../Redux/Actions/ShoesActions";
+import { detailsEvent } from "../Redux/Actions/ShoesActions";
 import { useParams } from "react-router";
 
 
@@ -14,12 +14,12 @@ const SingleShoes = () => {
     const dispatch = useDispatch();
 
 
-    const shoesDetails = useSelector((state) => state.shoesDetails);
-    const {loading, error, event} = shoesDetails;
+    const eventDetails = useSelector((state) => state.eventDetails);
+    const {loading, error, event} = eventDetails;
 
 
     useEffect(() =>{
-        dispatch(detailsShoes(eventId));
+        dispatch(detailsEvent(eventId));
     }, [dispatch, eventId])
 
     
@@ -37,7 +37,7 @@ const SingleShoes = () => {
                 (
                     <>
                         <div className='body'>
-                            <Event shoes={event[0]}/>
+                            {/* <Event event={event[0]}/> */}
                         </div>
                         
                     </>

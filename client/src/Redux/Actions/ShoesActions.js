@@ -21,12 +21,12 @@ export const listShoes = () => async(dispatch) =>{
 };
 
 // ONE SHOES
-export const detailsShoes = (id) => async(dispatch) =>{
+export const detailsEvent = (id) => async(dispatch) =>{
     try {
         dispatch({type:SHOES_DETAILS_REQUEST});
 
-        const {data} = await axios.get(`/event/${id}`);
-        dispatch({type: SHOES_DETAILS_SUCCESS, payload: data});
+        const {data} = await axios.get(`/events/${id}`);
+        dispatch({type: SHOES_DETAILS_SUCCESS, payload: data[0]});
 
     } catch (error) {
         dispatch({
