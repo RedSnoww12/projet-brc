@@ -95,6 +95,17 @@ const Login  = () => {
                     <input type="password" name="cmdp" id="cmdp" placeholder='Mot de passe' />
 
                 </div>
+               
+                </div>
+
+            </div>
+            <div className='ligne4'>
+
+                
+                <div className='bouton'>
+
+                    <input id='bouton' type="submit" value="Inscription" />
+
                 </div>
             </div>
 
