@@ -26,7 +26,7 @@ export const detailsEvent = (id) => async(dispatch) =>{
         dispatch({type:SHOES_DETAILS_REQUEST});
 
         const {data} = await axios.get(`/events/${id}`);
-        dispatch({type: SHOES_DETAILS_SUCCESS, payload: data[0]});
+        dispatch({type: SHOES_DETAILS_SUCCESS, payload: data});
 
     } catch (error) {
         dispatch({

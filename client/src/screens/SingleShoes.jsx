@@ -37,7 +37,7 @@ const SingleShoes = () => {
                 (
                     <>
                         <div className='body'>
-                            {/* <Event event={event[0]}/> */}
+                            <Event event={event}/>
                         </div>
                         
                     </>
