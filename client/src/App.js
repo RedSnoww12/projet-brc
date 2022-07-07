@@ -1,4 +1,4 @@
-import { Navbar, RafflesPage, Footer, Shop, Login } from './components';
+import { Navbar, RafflesPage, Footer, Shop, Register } from './components';
 
 import './App.css';
 
@@ -11,7 +11,7 @@ function App() {
       </div>
       
     <div className='body'>
-    <Login /> 
+    <Register /> 
     </div>
     
     <div className='footer'>
